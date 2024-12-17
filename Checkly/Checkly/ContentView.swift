@@ -5,13 +5,15 @@
 //  Created by Alessia Piscitelli on 16/12/24.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
     @State private var items: [ChecklistItem] = [
         ChecklistItem(title: "Work out", dueDate: Date(), description: ""),
         ChecklistItem(title: "Buy Groceries", dueDate: Date().addingTimeInterval(86400), description: "Don't forget to buy milk and eggs!")
-    ]  // Due esempi di default
+    ]
+    
     @State private var showAddItemView = false  // Variabile per mostrare il form per aggiungere un nuovo elemento
     @State private var newItemTitle = ""  // Titolo del nuovo elemento
     @State private var newItemDueDate = Date()  // Data di scadenza del nuovo elemento
@@ -28,7 +30,7 @@ struct ContentView: View {
                             items: $items,
                             showAddItemView: $showAddItemView,
                             toggleCheckmark: toggleCheckmark,
-                            deleteItems: deleteItems
+                            deleteItems: deleteItems  // Passa la funzione di eliminazione
                         )
                         .sheet(isPresented: $showAddItemView) {
                             AddItemView(
@@ -37,10 +39,10 @@ struct ContentView: View {
                                 newItemDueDate: $newItemDueDate,
                                 addItemAction: addItem
                             )
+                            .presentationDragIndicator(.visible)
                         }
                     }
-                    .navigationTitle("My Check-list")  // Titolo della navigazione
-//
+                    .navigationTitle("My Check-list")
                 }
             }
 
@@ -57,9 +59,11 @@ struct ContentView: View {
         .tint(.green)  // Colore di tint della TabBar
     }
 
-    // Funzione per eliminare gli elementi dalla lista
-    private func deleteItems(at offsets: IndexSet) {
-        items.remove(atOffsets: offsets)
+    // Funzione per eliminare un singolo elemento dalla lista
+    private func deleteItems(_ item: ChecklistItem) {
+        if let index = items.firstIndex(where: { $0.id == item.id }) {
+            items.remove(at: index)
+        }
     }
 
     // Funzione per cambiare lo stato di un elemento (completato/non completato)
@@ -81,6 +85,10 @@ struct ContentView: View {
         }
     }
 }
+
+
+
+
 
 #Preview {
     ContentView()
