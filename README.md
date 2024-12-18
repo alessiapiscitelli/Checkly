@@ -8,6 +8,8 @@ This is a simple iOS app built with Xcode that helps users manage their daily ta
 
 Whether you're managing daily tasks, tracking deadlines, or keeping an eye on upcoming events, Checkly has all the features you need to stay on top of your day.
 
+<img src="IMG_1856.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1858.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1857.PNG" alt="Screenshot" width= "30%"> 
+
 ✨Features
 - Add, edit, mark and delete tasks
 - View daily tasks in a convenient calendar
@@ -22,5 +24,4 @@ Whether you're managing daily tasks, tracking deadlines, or keeping an eye on up
 
 This project is licensed under the MIT License. 
 
-<img src="IMG_1856.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1858.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1857.PNG" alt="Screenshot" width= "30%"> 
 
