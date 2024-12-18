@@ -1,3 +1,5 @@
+
+<img src="App Icon 2.png" alt="Screenshot" width= "30%"> 
 # Checkly
 
 📝TaskManager App
@@ -19,4 +21,6 @@ Whether you're managing daily tasks, tracking deadlines, or keeping an eye on up
 📑License
 
 This project is licensed under the MIT License. 
+
+<img src="IMG_1856.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1858.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1857.PNG" alt="Screenshot" width= "30%"> 
 
