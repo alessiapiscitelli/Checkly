@@ -11,7 +11,7 @@ Whether you're managing daily tasks, tracking deadlines, or keeping an eye on up
 <img src="IMG_1856.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1858.PNG" alt="Screenshot" width= "30%"> <img src="IMG_1857.PNG" alt="Screenshot" width= "30%"> 
 
 ✨Features
-- Add, edit, mark and delete tasks
+- Add, mark and delete tasks
 - View daily tasks in a convenient calendar
 - Voiceover accessibility
 
