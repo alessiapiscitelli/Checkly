@@ -12,7 +12,7 @@ Whether you're managing daily tasks, tracking deadlines, or keeping an eye on up
 - Voiceover accessibility
 
 🔨Installation
-1. Clone this repository: `git clone <https://github.com/your-username/tasktracker.git`>
+1. Clone this repository: `git clone https://github.com/alessiapiscitelli/Checkly.git
 2. Open the project in Xcode.
 3. Run the app on a simulator or connected device.
 
